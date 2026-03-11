@@ -1,43 +1,21 @@
-# UB_JTEDS
+handle_4G
 
-Python-based Embedded IoT application designed for device-side operations such as
-sensor data handling, 4G communication, and system utilities on Embedded Linux platforms.
+Description:
+This module is used to handle 4G connectivity for the device.
 
----
+Functions:
+- check_sim_status()
+- fetch_sim_info()
+- check_signal_strength()
+- connect_network()
+- reconnect_network()
+- send_data_mqtt()
 
-## 📌 Project Overview
+Purpose:
+This handler ensures that the device stays connected to the internet using 4G LTE module.
+It also checks SIM status, signal strength, and reconnects automatically if network fails.
 
-UB_JTEDS is an Embedded IoT software project written in Python.  
-It focuses on interacting with hardware peripherals, managing connectivity,
-and processing data on Linux-based embedded devices (e.g., CM4, SBCs).
-
----
-
-## ⚙️ Features
-
-- 📡 4G / cellular module handling
-- 📊 Sensor data processing (e.g., flow meter)
-- 🧠 Utility/helper modules for system operations
-- 🐧 Designed for Embedded Linux environments
-- 🐍 Python-based modular architecture
-
----
-
-## 🛠️ Tech Stack
-
-- **Programming Language:** Python
-- **Platform:** Embedded Linux
-- **Domain:** Embedded Systems, IoT
-- **Interfaces:** Serial / Modem / Sensors
-
----
-
-## 📁 Project Structure
-
-```text
-UB_JTEDS/
-│── handle_4G.py
-│── fetch_sim_info.py
-│── flow_meter_*.py
-│── helper.py
-│── __pycache__/
+Used in:
+Project:INTRANSIT CONCRETE WORKABILITY SYSTEM 
+Device: JTURPCM4
+Branch: handle_4G
